@@ -295,6 +295,27 @@ header {
 	padding-bottom: 69px;
 }
 
+.scheduleHead{
+	background-color: #F6BE00;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.scheduleHead h5{
+	font-size: 24px;
+	margin-bottom: -6px;
+}
+
+#friday{
+	background-color: white;
+	margin-right: 20px;
+}
+
+#saturday{
+	background-color: white;
+	margin-right: -20px;
+}
+
 .faq {
 	background: #fff;
 }
