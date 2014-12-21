@@ -286,7 +286,7 @@ header {
 }
 
 .schedule {
-	background: #eeeeee;
+	background: #FFFFFF;
 	color: #474d5d;
 }
 
@@ -307,17 +307,17 @@ header {
 }
 
 #friday{
-	background-color: white;
+	background-color: #eee;
 	margin-right: 20px;
 }
 
 #saturday{
-	background-color: white;
+	background-color: #eee;
 	margin-right: -20px;
 }
 
 .faq {
-	background: #fff;
+	background: #eee;
 }
 
 .faq .container {
@@ -326,11 +326,11 @@ header {
 }
 
 .faq h2 {
-	color: #e51c23;
+	color: #C8102E;
 }
 
 .sponsors {
-	background: #424242;
+	background: #FFFFFF;
 }
 
 .sponsors .container {
@@ -339,7 +339,7 @@ header {
 }
 
 .sponsors p {
-	color: #84868d;
+	color: #000;
 	/*font-size:13px;*/
 	line-height: 18px;
 }
@@ -349,11 +349,17 @@ header {
 }
 
 .sponsors h2 {
-	color: #fff;
+	color: #C8102E;
 }
 
 .sponsors h4 {
 	font-weight: 700;
+}
+
+.footer {
+	padding-top: 41px;
+	padding-bottom: 40px;
+	background-color: #54585A;
 }
 
 @media screen and (max-width: 991px) {
