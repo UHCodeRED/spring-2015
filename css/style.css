@@ -43,17 +43,7 @@ p {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
-	/*padding-bottom: 22px;*/
 	margin: 0;
-}
-
-h1 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 80px;
-	line-height: 90px;
-	font-weight: 700;
-	margin: 0;
-	padding-bottom: 8px;
 }
 
 h2 {
@@ -123,10 +113,6 @@ header {
 	max-width: 960px;
 	color: white;
 	zoom: 1;
-}
-
-.bannerText h1 {
-	text-transform: uppercase;
 }
 
 .bannerText h2 {
@@ -341,16 +327,6 @@ header {
 	padding-bottom: 90px;
 }
 
-.sponsors p {
-	color: #000;
-	/*font-size:13px;*/
-	line-height: 18px;
-}
-
-.sponsors .heading p {
-	padding-bottom: 41px;
-}
-
 .sponsors h2 {
 	color: #C8102E;
 }
@@ -391,14 +367,6 @@ header {
 		min-height: 700px;
 	}
 
-	#header h3 {
-		font-size: 38px;
-	}
-
-	#header h3 span {
-		font-size: 16px;
-	}
-
 	.navbar.navbar-inverse.navbar-static-top a {
 		padding-left: 17px;
 	}
@@ -431,11 +399,6 @@ header {
 		top: 25%;
 		padding-top: 15px;
 		padding-bottom: 15px;
-	}
-
-	.bannerText h1 {
-		font-size: 42px;
-		line-height: 48px;
 	}
 
 	.bannerText h2 {

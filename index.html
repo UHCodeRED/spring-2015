@@ -15,7 +15,7 @@
     <div class="wrapper" id="wrapper">
         <header>
             <div class="banner row" id="banner">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd" style="height:100%">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd">
                     <div class="bannerPart">
                         <img alt="" class="bannerImg" src="images/back.jpg">
                     </div>
@@ -280,7 +280,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       //StickUp.js
-      jQuery(function(e){e(document).ready(function(){var t=[];var n=[];var r=[];var i=0;var s="";var o="";var u="";var a=null;var f=0;var l=0;var c=0;var h=0;e(window).scroll(function(t){var n=e(this).scrollTop();if(n>i){s="down"}else{s="up"}i=n});e.fn.stickUp=function(t){e(this).addClass("stuckMenu");var n=0;if(t!=null){for(var i in t.parts){if(t.parts.hasOwnProperty(i)){r[n]=t.parts[n];n++}}if(n==0){console.log("error:needs arguments")}o=t.itemClass;u=t.itemHover;if(t.topMargin!=null){if(t.topMargin=="auto"){h=parseInt(e(".stuckMenu").css("margin-top"))}else{if(isNaN(t.topMargin)&&t.topMargin.search("px")>0){h=parseInt(t.topMargin.replace("px",""))}else if(!isNaN(parseInt(t.topMargin))){h=parseInt(t.topMargin)}else{console.log("incorrect argument, ignored.");h=0}}}else{h=0}a=e("."+o).size()}f=parseInt(e(this).height());l=parseInt(e(this).css("margin-bottom"));c=parseInt(e(this).next().closest("div").css("margin-top"));vartop=parseInt(e(this).offset().top)};e(document).on("scroll",function(){varscroll=parseInt(e(document).scrollTop());if(a!=null){for(var t=0;t<a;t++){n[t]=e("#"+r[t]+"").offset().top;function i(t){contentView=e("#"+r[t]+"").height()*.4;testView=n[t]-contentView;if(varscroll>testView){e("."+o).removeClass(u);e("."+o+":eq("+t+")").addClass(u)}else if(varscroll<100){e("."+o).removeClass(u);e("."+o+":eq(0)").addClass(u)}}if(s=="down"&&varscroll>n[t]-100&&varscroll<n[t]+100){e("."+o).removeClass(u);e("."+o+":eq("+t+")").addClass(u)}if(s=="up"){i(t)}}}if(vartop<varscroll+h){e(".wrapper").addClass("spHeight");e(".stuckMenu").addClass("isStuck");e(".stuckMenu").next().closest("div").css({"margin-top":f+l+c+"px"},10);e(".stuckMenu").css("position","fixed");e(".isStuck").css({top:"0"},10,function(){})}if(varscroll+h<vartop){e(".wrapper").removeClass("spHeight");e(".stuckMenu").removeClass("isStuck");e(".stuckMenu").next().closest("div").css({"margin-top":c+"px"},10);e(".stuckMenu").css("position","relative")}})})})
+      jQuery(function($){$(document).ready(function(){var contentButton = [];var contentTop = [];var content = [];var lastScrollTop = 0;var scrollDir = '';var itemClass = '';var itemHover = '';var menuSize = null;var stickyHeight = 0;var stickyMarginB = 0;var currentMarginT = 0;var topMargin = 0;$(window).scroll(function(event){var st = $(this).scrollTop();if (st > lastScrollTop){scrollDir = 'down';} else {scrollDir = 'up';}lastScrollTop = st;});$.fn.stickUp = function( options ) {$(this).addClass('stuckMenu');var objn = 0;if(options != null) {for(var o in options.parts) {if (options.parts.hasOwnProperty(o)){content[objn] = options.parts[objn];objn++;}}if(objn == 0) {console.log('error:needs arguments');}itemClass = options.itemClass;itemHover = options.itemHover;if(options.topMargin != null) {if(options.topMargin == 'auto') {topMargin = parseInt($('.stuckMenu').css('margin-top'));} else {if(isNaN(options.topMargin) && options.topMargin.search("px") > 0){topMargin = parseInt(options.topMargin.replace("px",""));} else if(!isNaN(parseInt(options.topMargin))) {topMargin = parseInt(options.topMargin);} else {console.log("incorrect argument, ignored.");topMargin = 0;} }} else {topMargin = 0;}menuSize = $('.'+itemClass).size();}stickyHeight = parseInt($(this).height());stickyMarginB = parseInt($(this).css('margin-bottom'));currentMarginT = parseInt($(this).next().closest('div').css('margin-top'));vartop = parseInt($(this).offset().top);};$(document).on('scroll', function() {varscroll = parseInt($(document).scrollTop());if(menuSize != null){for(var i=0;i < menuSize;i++){contentTop[i] = $('#'+content[i]+'').offset().top;function bottomView(i) {contentView = $('#'+content[i]+'').height()*.4;testView = contentTop[i] - contentView;if(varscroll > testView){$('.'+itemClass).removeClass(itemHover);$('.'+itemClass+':eq('+i+')').addClass(itemHover);} else if(varscroll < 50){$('.'+itemClass).removeClass(itemHover);$('.'+itemClass+':eq(0)').addClass(itemHover);}}if(scrollDir == 'down' && varscroll > contentTop[i]-50 && varscroll < contentTop[i]+50) {$('.'+itemClass).removeClass(itemHover);$('.'+itemClass+':eq('+i+')').addClass(itemHover);}if(scrollDir == 'up') {bottomView(i);}}}if(vartop < varscroll + topMargin){$('.stuckMenu').addClass('isStuck');$('.stuckMenu').next().closest('div').css({'margin-top': stickyHeight + stickyMarginB + currentMarginT + 'px'}, 10);$('.stuckMenu').css("position","fixed");$('.isStuck').css({top: '0px'}, 10, function(){});};if(varscroll + topMargin < vartop){$('.stuckMenu').removeClass('isStuck');$('.stuckMenu').next().closest('div').css({'margin-top': currentMarginT + 'px'}, 10);$('.stuckMenu').css("position","relative");};});});});
       
       jQuery(function($) {
           $(document).ready(function() {
@@ -330,9 +330,8 @@
                           height: w
                       });
                   }
-
               }
-
+              
               $(window).resize(function() {
                   resizeHeader();
               });
