@@ -43,7 +43,7 @@ p {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
-	padding-bottom: 22px;
+	/*padding-bottom: 22px;*/
 	margin: 0;
 }
 
@@ -318,6 +318,7 @@ header {
 
 .faq {
 	background: #eee;
+	color: #474d5d;
 }
 
 .faq .container {
@@ -329,8 +330,10 @@ header {
 	color: #C8102E;
 }
 
+
 .sponsors {
 	background: #FFFFFF;
+	color: #474d5d;
 }
 
 .sponsors .container {
