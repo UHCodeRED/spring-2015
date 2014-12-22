@@ -347,6 +347,10 @@ header {
 	background-color: #54585A;
 }
 
+#footerRight {
+	text-align: right;
+}
+
 @media screen and (max-width: 991px) {
 	.navbar.navbar-inverse.navbar-static-top a {
 		padding-left: 18px;
@@ -402,6 +406,14 @@ header {
 
 	ul.navbar-nav li a {
 		display: block;
+	}
+
+	#footerRight{
+		text-align: center;
+	}
+
+	.footer{
+		text-align: center;
 	}
 }
 
