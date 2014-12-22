@@ -13,6 +13,7 @@ body {
 	height: 100%;
 	overflow: scroll;
 	overflow-x: hidden;
+	min-height: 320px
 }
 
 a {
@@ -113,12 +114,14 @@ header {
 	max-width: 960px;
 	color: white;
 	zoom: 1;
+	line-height: 0px;
 }
 
 .bannerText h2 {
 	font-size: 34px;
 	text-transform: none;
 	color: white;
+	line-height: 72px;
 }
 
 .bannerPart {
@@ -156,8 +159,18 @@ header {
 	height: 60px;
 }
 
+.navbar-brand{
+	padding-top: 18px;
+	padding-left: 5px;
+}
+
 .nav > li > a {
 	display: inline-block;
+	height:60px;
+}
+
+.navbar-nav>li>a{
+	padding-top: 22px;
 }
 
 .navbar-nav > li {
@@ -217,7 +230,6 @@ header {
 
 .navbar.navbar-inverse.navbar-static-top a {
 	color: #fff;
-	padding: 22px 25px;
 	line-height: 18px;
 	text-align: center;
 }
@@ -292,9 +304,14 @@ header {
 	margin-bottom: -6px;
 }
 
+#schedulesRow{
+	margin-right: 0px;
+}
+
 #friday{
 	background-color: #eee;
 	margin-right: 20px;
+	margin-left: -20px;
 }
 
 #saturday{
@@ -341,9 +358,12 @@ header {
 	background-color: #54585A;
 }
 
+#footerRight {
+	text-align: right;
+}
+
 @media screen and (max-width: 991px) {
 	.navbar.navbar-inverse.navbar-static-top a {
-		padding-left: 18px;
 		padding-right: 18px;
 	}
 
@@ -366,10 +386,6 @@ header {
 	body {
 		min-height: 700px;
 	}
-
-	.navbar.navbar-inverse.navbar-static-top a {
-		padding-left: 17px;
-	}
 }
 
 @media screen and (max-width: 768px) {
@@ -377,6 +393,15 @@ header {
 	.navwrapper .container {
 		padding-right: 15px;
 		padding-left: 15px;
+	}
+
+	#schedulesRow{
+		margin-right: 15px;
+	}
+
+	#friday{
+		margin-bottom: 15px;
+		margin-left: 0;
 	}
 }
 
@@ -388,6 +413,14 @@ header {
 	ul.navbar-nav li a {
 		display: block;
 	}
+
+	#footerRight{
+		text-align: center;
+	}
+
+	.footer{
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 650px) {
@@ -396,21 +429,223 @@ header {
 	}
 
 	.bannerText {
-		top: 25%;
+		top: 35%;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		line-height: 0px;
 	}
 
 	.bannerText h2 {
-		font-size: 18px;
-		line-height: 24px;
+		font-size: 24px;
+		line-height: 72px;
 	}
 }
 
-@media screen and (max-width: 480px) {
-	.navbar.navbar-inverse.navbar-static-top a {
-		line-height: 17px;
-		padding-top: 11px;
-		padding-bottom: 11px;
+@media screen and (max-height: 700px) {
+	.bannerText{
+		top: 30%;
+	}
+}
+
+@media screen and (max-height: 600px) {
+	.bannerText {
+		top: 25%;
+	}
+}
+
+@media screen and (max-height: 500px) {
+	.bannerText {
+		top: 20%;
+	}
+}
+
+@media screen and (max-height: 400px){
+	.bannerText{
+		top: 10%;
+	}
+}
+
+@media screen and (max-height: 385px){
+	.bannerText{
+		top: 5%;
+	}
+}
+
+/*650-991 width*/
+
+@media screen and (max-height: 800px) and (min-width: 650px){
+	.bannerText{
+		top: 30%;
+	}
+}
+
+@media screen and (max-height: 750px) and (min-width: 650px){
+	.bannerText{
+		top: 25%;
+	}
+}
+
+@media screen and (max-height: 600px) and (min-width: 650px){
+	.bannerText {
+		top: 20%;
+	}
+}
+
+@media screen and (max-height: 550px) and (min-width: 650px){
+	.bannerText {
+		top: 15%;
+	}
+}
+
+@media screen and (max-height: 500px) and (min-width: 650px){
+	.bannerText{
+		top: 10%;
+	}
+}
+
+@media screen and (max-height: 450px) and (min-width: 650px){
+	.bannerText{
+		top: 5%;
+	}
+
+	.bannerText img{
+		width: 90%;
+	}
+}
+
+@media screen and (max-height: 400px) and (min-width: 650px){
+	.bannerText{
+		line-height: 15px;
+	}
+
+	.bannerText img{
+		width: 80%;
+	}
+}
+
+@media screen and (max-height: 380px) and (min-width: 650px){
+	.bannerText{
+		top: 0;
+		line-height: 15px;
+	}
+
+	.bannerText img{
+		width: 70%;
+	}
+}
+
+@media screen and (max-height: 360px) and (min-width: 650px){
+	.bannerText img{
+		width: 55%;
+	}
+}
+
+@media screen and (max-height: 340px) and (min-width: 650px){
+	.bannerText img{
+		width: 40%;
+	}
+}
+
+@media screen and (max-height: 380px) and (max-width: 650px) {
+	.bannerText{
+		top: 5%;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-height: 330px) and (max-width: 650px){
+	.bannerText{
+		top: 5%;
+		margin-right: 20%;
+		margin-left: 20%;
+	}
+}
+
+/*991+ width*/
+
+@media screen and (max-height: 700px) and (min-width: 991px){
+	.bannerText{
+		top: 20%;
+	}
+}
+
+@media screen and (max-height: 600px) and (min-width: 991px){
+	.bannerText {
+		top: 15%;
+	}
+}
+
+@media screen and (max-height: 550px) and (min-width: 991px){
+	.bannerText {
+		top: 10%;
+	}
+}
+
+@media screen and (max-height: 500px) and (min-width: 991px){
+	.bannerText{
+		top: 5%;
+	}
+}
+
+@media screen and (max-height: 450px) and (min-width: 991px){
+	.bannerText{
+		top: 0%;
+	}
+
+	.bannerText img{
+		width: 90%;
+	}
+}
+
+@media screen and (max-height: 400px) and (min-width: 991px){
+	.bannerText img{
+		width: 80%;
+	}
+}
+
+@media screen and (max-height: 380px) and (min-width: 991px){
+	.bannerText img{
+		width: 70%;
+	}
+}
+
+@media screen and (max-height: 360px) and (min-width: 991px){
+	.bannerText img{
+		width: 55%;
+	}
+}
+
+@media screen and (max-height: 340px) and (min-width: 991px){
+	.bannerText img{
+		width: 40%;
+	}
+}
+
+@media screen and (max-height: 320px) and (min-width: 991px){
+	.bannerText img{
+		width: 25%;
+	}
+}
+
+@media screen and (max-height: 300px) and (min-width: 991px){
+	.bannerText img{
+		width: 10%;
+	}
+}
+
+@media screen and (max-height: 380px) and (max-width: 991px) {
+	.bannerText{
+		top: 5%;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-height: 330px) and (max-width: 991px){
+	.bannerText{
+		top: 5%;
+		margin-right: 20%;
+		margin-left: 20%;
 	}
 }
