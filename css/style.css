@@ -166,6 +166,11 @@ header {
 
 .nav > li > a {
 	display: inline-block;
+	height:60px;
+}
+
+.navbar-nav>li>a{
+	padding-top: 22px;
 }
 
 .navbar-nav > li {
