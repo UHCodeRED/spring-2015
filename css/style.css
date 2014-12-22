@@ -292,9 +292,14 @@ header {
 	margin-bottom: -6px;
 }
 
+#schedulesRow{
+	margin-right: 0px;
+}
+
 #friday{
 	background-color: #eee;
 	margin-right: 20px;
+	margin-left: -20px;
 }
 
 #saturday{
@@ -378,6 +383,15 @@ header {
 		padding-right: 15px;
 		padding-left: 15px;
 	}
+
+	#schedulesRow{
+		margin-right: 15px;
+	}
+
+	#friday{
+		margin-bottom: 15px;
+		margin-left: 0;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -413,4 +427,6 @@ header {
 		padding-top: 11px;
 		padding-bottom: 11px;
 	}
+
+
 }
