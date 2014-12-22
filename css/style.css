@@ -159,6 +159,11 @@ header {
 	height: 60px;
 }
 
+.navbar-brand{
+	padding-top: 18px;
+	padding-left: 5px;
+}
+
 .nav > li > a {
 	display: inline-block;
 }
@@ -220,7 +225,6 @@ header {
 
 .navbar.navbar-inverse.navbar-static-top a {
 	color: #fff;
-	padding: 22px 25px;
 	line-height: 18px;
 	text-align: center;
 }
@@ -355,7 +359,6 @@ header {
 
 @media screen and (max-width: 991px) {
 	.navbar.navbar-inverse.navbar-static-top a {
-		padding-left: 18px;
 		padding-right: 18px;
 	}
 
@@ -377,10 +380,6 @@ header {
 @media screen and (max-width: 810px) {
 	body {
 		min-height: 700px;
-	}
-
-	.navbar.navbar-inverse.navbar-static-top a {
-		padding-left: 17px;
 	}
 }
 
@@ -643,13 +642,5 @@ header {
 		top: 5%;
 		margin-right: 20%;
 		margin-left: 20%;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.navbar.navbar-inverse.navbar-static-top a {
-		line-height: 17px;
-		padding-top: 11px;
-		padding-bottom: 11px;
 	}
 }
