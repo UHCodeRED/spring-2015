@@ -114,12 +114,14 @@ header {
 	max-width: 960px;
 	color: white;
 	zoom: 1;
+	line-height: 0px;
 }
 
 .bannerText h2 {
 	font-size: 34px;
 	text-transform: none;
 	color: white;
+	line-height: 72px;
 }
 
 .bannerPart {
@@ -426,11 +428,12 @@ header {
 		top: 35%;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		line-height: 0px;
 	}
 
 	.bannerText h2 {
-		font-size: 18px;
-		line-height: 24px;
+		font-size: 24px;
+		line-height: 72px;
 	}
 }
 
