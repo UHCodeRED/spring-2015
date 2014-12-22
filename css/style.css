@@ -13,6 +13,7 @@ body {
 	height: 100%;
 	overflow: scroll;
 	overflow-x: hidden;
+	min-height: 320px
 }
 
 a {
@@ -451,7 +452,82 @@ header {
 	}
 }
 
-@media screen and (max-height: 380px) and (max-width: 991px) {
+/*650-991 width*/
+
+@media screen and (max-height: 800px) and (min-width: 650px){
+	.bannerText{
+		top: 30%;
+	}
+}
+
+@media screen and (max-height: 750px) and (min-width: 650px){
+	.bannerText{
+		top: 25%;
+	}
+}
+
+@media screen and (max-height: 600px) and (min-width: 650px){
+	.bannerText {
+		top: 20%;
+	}
+}
+
+@media screen and (max-height: 550px) and (min-width: 650px){
+	.bannerText {
+		top: 15%;
+	}
+}
+
+@media screen and (max-height: 500px) and (min-width: 650px){
+	.bannerText{
+		top: 10%;
+	}
+}
+
+@media screen and (max-height: 450px) and (min-width: 650px){
+	.bannerText{
+		top: 5%;
+	}
+
+	.bannerText img{
+		width: 90%;
+	}
+}
+
+@media screen and (max-height: 400px) and (min-width: 650px){
+	.bannerText{
+		line-height: 15px;
+	}
+
+	.bannerText img{
+		width: 80%;
+	}
+}
+
+@media screen and (max-height: 380px) and (min-width: 650px){
+	.bannerText{
+		top: 0;
+		line-height: 15px;
+	}
+
+	.bannerText img{
+		width: 70%;
+	}
+}
+
+@media screen and (max-height: 360px) and (min-width: 650px){
+	.bannerText img{
+		width: 55%;
+	}
+}
+
+@media screen and (max-height: 340px) and (min-width: 650px){
+	.bannerText img{
+		width: 40%;
+	}
+}
+
+@media screen and (max-height: 380px) and (max-width: 650px) {
 	.bannerText{
 		top: 5%;
 		margin-right: 10%;
@@ -459,13 +535,15 @@ header {
 	}
 }
 
-@media screen and (max-height: 330px) and (max-width: 991px){
+@media screen and (max-height: 330px) and (max-width: 650px){
 	.bannerText{
 		top: 5%;
 		margin-right: 20%;
 		margin-left: 20%;
 	}
 }
+
+/*991+ width*/
 
 @media screen and (max-height: 700px) and (min-width: 991px){
 	.bannerText{
@@ -537,11 +615,21 @@ header {
 	}
 }
 
-/*@media screen and (max-height: 385px) and (min-width: 991px){
+@media screen and (max-height: 380px) and (max-width: 991px) {
 	.bannerText{
 		top: 5%;
+		margin-right: 10%;
+		margin-left: 10%;
 	}
-}*/
+}
+
+@media screen and (max-height: 330px) and (max-width: 991px){
+	.bannerText{
+		top: 5%;
+		margin-right: 20%;
+		margin-left: 20%;
+	}
+}
 
 @media screen and (max-width: 480px) {
 	.navbar.navbar-inverse.navbar-static-top a {
