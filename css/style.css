@@ -274,7 +274,7 @@ header {
 
 .regButton:hover {
 	background: #960C22;
-	color: #CCCCCC;
+	color: #ccc;
 	text-decoration: none;
 }
 
@@ -291,8 +291,42 @@ header {
 	overflow: auto;
 }
 
+.buttons{
+	text-align: center;
+}
+
+.btn{
+	height: 45px;
+	padding: 0 20px;
+}
+
+.submit{
+	background-color: #C8102E;
+	border-color: #960C22;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.submit:hover{
+	background-color: #960C22;
+	border-color: #640817;
+	color: #fff;
+}
+
+.cancel{
+	background-color: #888B8D;
+	border-color: #54585A;
+	color: #fff;
+}
+
+.cancel:hover{
+	background-color: #54585A;
+	border-color: #000;
+	color: #fff;
+}
+
 .schedule {
-	background: #FFFFFF;
+	background: #fff;
 	color: #474d5d;
 }
 
