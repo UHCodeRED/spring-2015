@@ -327,27 +327,24 @@ input[type="color"]:focus,
 
 .submit{
 	background-color: #C8102E;
-	border-color: #960C22;
 	color: #fff;
 	margin-right: 10px;
+	border-radius: 0;
 }
 
 .submit:hover{
 	background-color: #960C22;
-	border-color: #640817;
 	color: #fff;
 }
 
 .cancel{
-	background-color: #888B8D;
-	border-color: #000;
-	color: #fff;
+	background-color: #fff;
+	color: #000;
+	border-radius: 0;
 }
 
 .cancel:hover{
-	background-color: #000;
-	border-color: #000;
-	color: #fff;
+	color: #C8102E;
 }
 
 .schedule {
