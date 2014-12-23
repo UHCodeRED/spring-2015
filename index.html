@@ -7,32 +7,59 @@
         CodeRED | Houston's Premier Hackathon
     </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/CodeRED-Icon.png" />
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <div class="wrapper" id="wrapper">
-        <header>
+        <header id="home">
             <div class="banner row" id="banner">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd">
                     <div class="bannerPart">
-                        <img alt="" class="bannerImg" src="images/back.jpg">
+                        <img alt="" class="bannerImg" height="500%" src="images/back.jpg" style="visibility: hidden;">
                     </div>
                 </div>
             </div>
-            <div class="bannerText container">
+            <div class="bannerText container" id="bannerContent">
+              <div id="CodeRED">
                 <img width="100%" src="images/CodeRED-Light.png"/>
                 <br><br>
                 <h2>Houston's Premier Hackathon</h2>
                 <br><br>
-                <a href="">
-                  <h3 class="regButton">
-                      Sign me up!
-                  </h3>
-                </a>
+              </div>
+              <div id="registration">
+                <h3 class="regButton" id="regButtonHeader" onclick="toggleSignUpHeader()">
+                    Sign me up!
+                </h3>
+                <br>
+                <div id="regContent">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="name">Full name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email (.edu preffered):</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                    </div>
+                    <div class="form-group">
+                      <label for="school">School name:</label>
+                      <input type="text" class="form-control" id="school" placeholder="Enter school name">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="button" class="btn btn-default" onclick="toggleSignUpHeader()">Cancel</button>
+                  </form>
+                </div>
+              </div>
             </div>
-            <div class="menu">
+        </header>
+        <div class="menu">
                 <div class="navbar-wrapper">
                     <div class="container">
                         <div class="navwrapper">
@@ -71,8 +98,6 @@
                     </div>
                 </div>
             </div>
-        </header>
-
         <section class="about" id="about">
             <div class="container">
                 <div class="heading">
@@ -105,7 +130,7 @@
                 <div class="heading">
                     <h2>Schedule</h2>
                 </div>
-                <div class="row" id="schedulesRow">
+                <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="friday">
                         <div class="row">
                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 scheduleHead">
@@ -262,7 +287,6 @@
                     <h3>Want to become a sponsor? Send us an email at this@that.com</h4>
                   </div>
                 </div>
-
             </div>
         </section>
 
@@ -281,68 +305,8 @@
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      //StickUp.js
-      jQuery(function($){$(document).ready(function(){var contentButton = [];var contentTop = [];var content = [];var lastScrollTop = 0;var scrollDir = '';var itemClass = '';var itemHover = '';var menuSize = null;var stickyHeight = 0;var stickyMarginB = 0;var currentMarginT = 0;var topMargin = 0;$(window).scroll(function(event){var st = $(this).scrollTop();if (st > lastScrollTop){scrollDir = 'down';} else {scrollDir = 'up';}lastScrollTop = st;});$.fn.stickUp = function( options ) {$(this).addClass('stuckMenu');var objn = 0;if(options != null) {for(var o in options.parts) {if (options.parts.hasOwnProperty(o)){content[objn] = options.parts[objn];objn++;}}if(objn == 0) {console.log('error:needs arguments');}itemClass = options.itemClass;itemHover = options.itemHover;if(options.topMargin != null) {if(options.topMargin == 'auto') {topMargin = parseInt($('.stuckMenu').css('margin-top'));} else {if(isNaN(options.topMargin) && options.topMargin.search("px") > 0){topMargin = parseInt(options.topMargin.replace("px",""));} else if(!isNaN(parseInt(options.topMargin))) {topMargin = parseInt(options.topMargin);} else {console.log("incorrect argument, ignored.");topMargin = 0;} }} else {topMargin = 0;}menuSize = $('.'+itemClass).size();}stickyHeight = parseInt($(this).height());stickyMarginB = parseInt($(this).css('margin-bottom'));currentMarginT = parseInt($(this).next().closest('div').css('margin-top'));vartop = parseInt($(this).offset().top);};$(document).on('scroll', function() {varscroll = parseInt($(document).scrollTop());if(menuSize != null){for(var i=0;i < menuSize;i++){contentTop[i] = $('#'+content[i]+'').offset().top;function bottomView(i) {contentView = $('#'+content[i]+'').height()*.4;testView = contentTop[i] - contentView;if(varscroll > testView){$('.'+itemClass).removeClass(itemHover);$('.'+itemClass+':eq('+i+')').addClass(itemHover);} else if(varscroll < 50){$('.'+itemClass).removeClass(itemHover);$('.'+itemClass+':eq(0)').addClass(itemHover);}}if(scrollDir == 'down' && varscroll > contentTop[i]-50 && varscroll < contentTop[i]+50) {$('.'+itemClass).removeClass(itemHover);$('.'+itemClass+':eq('+i+')').addClass(itemHover);}if(scrollDir == 'up') {bottomView(i);}}}if(vartop < varscroll + topMargin){$('.stuckMenu').addClass('isStuck');$('.stuckMenu').next().closest('div').css({'margin-top': stickyHeight + stickyMarginB + currentMarginT + 'px'}, 10);$('.stuckMenu').css("position","fixed");$('.isStuck').css({top: '0px'}, 10, function(){});};if(varscroll + topMargin < vartop){$('.stuckMenu').removeClass('isStuck');$('.stuckMenu').next().closest('div').css({'margin-top': currentMarginT + 'px'}, 10);$('.stuckMenu').css("position","relative");};});});});
-      
-      jQuery(function($) {
-          $(document).ready(function() {
-              $('.navbar-wrapper').stickUp({
-                  parts: {
-                      0: 'banner',
-                      1: 'about',
-                      2: 'schedule',
-                      3: 'faq',
-                      4: 'sponsors'
-                  },
-                  itemClass: 'menuItem',
-                  itemHover: 'active',
-                  topMargin: 'auto'
-              });
-          });
-          $(".navbar.navbar-inverse.navbar-static-top a").click(function() {
-              $(".navbar-collapse").addClass("hideClass");
-          });
-          $(".navbar.navbar-inverse.navbar-static-top a").click(function() {
-              $(".navbar-collapse").addClass("collapse");
-          });
-          $(".navbar.navbar-inverse.navbar-static-top a").click(function() {
-              $(".navbar-collapse").removeClass("in");
-          });
-          $(".navbar-toggle").click(function() {
-              $(".navbar-collapse").removeClass("hideClass");
-          });
-
-          //Resize Header
-          $(function() {
-              function resizeHeader() {
-                  $('#banner').css({
-                      width: $(window).width(),
-                      height: $(window).height() - 60
-                  });
-                  var w = $(window).width();
-                  var h = $(window).height();
-                  if (h > w) {
-                      $('#bannerImg').css({
-                          width: h,
-                          height: h - 60
-                      });
-                  } else {
-                      $('#bannerImg').css({
-                          width: w,
-                          height: w
-                      });
-                  }
-              }
-              
-              $(window).resize(function() {
-                  resizeHeader();
-              });
-
-              resizeHeader();
-          });
-      });
-    </script>
+    <script src="js/stickyAndMain.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 
 </html>
