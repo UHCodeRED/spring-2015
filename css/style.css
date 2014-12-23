@@ -119,14 +119,13 @@ header {
 	max-width: 960px;
 	color: white;
 	zoom: 1;
-	line-height: 0px;
+	line-height: 10px;
 }
 
 .bannerText h2 {
 	font-size: 34px;
 	text-transform: none;
 	color: white;
-	line-height: 72px;
 }
 
 .bannerPart {
@@ -368,18 +367,9 @@ header {
 }
 
 @media screen and (max-width: 991px) {
-	.navbar.navbar-inverse.navbar-static-top a {
-		padding-right: 18px;
-	}
-
 	.bannerText {
 		padding-left: 25px;
 		padding-right: 25px;
-	}
-
-	.bannerText h1 {
-		font-size: 65px;
-		line-height: 71px;
 	}
 
 	.bannerText h2 {
@@ -396,7 +386,7 @@ header {
 @media screen and (max-width: 768px) {
 	.navbar-wrapper .container,
 	.navwrapper .container {
-		padding-right: 15px;
+		padding-right: 8px;
 		padding-left: 15px;
 	}
 
@@ -421,118 +411,5 @@ header {
 
 	.footer{
 		text-align: center;
-	}
-}
-
-@media screen and (max-width: 650px) {
-	#wrapper {
-		top: 200px !important;
-	}
-
-	.bannerText {
-		padding-top: 15px;
-		padding-bottom: 15px;
-		line-height: 0px;
-	}
-
-	.bannerText h2 {
-		font-size: 24px;
-		line-height: 72px;
-	}
-}
-
-/*650-991 width*/
-
-@media screen and (max-height: 450px) and (min-width: 650px){
-	.bannerText img{
-		width: 90%;
-	}
-}
-
-@media screen and (max-height: 400px) and (min-width: 650px){
-	.bannerText{
-		line-height: 15px;
-	}
-
-	.bannerText img{
-		width: 80%;
-	}
-}
-
-@media screen and (max-height: 380px) and (min-width: 650px){
-	.bannerText img{
-		width: 70%;
-	}
-}
-
-@media screen and (max-height: 360px) and (min-width: 650px){
-	.bannerText img{
-		width: 55%;
-	}
-}
-
-@media screen and (max-height: 340px) and (min-width: 650px){
-	.bannerText img{
-		width: 40%;
-	}
-}
-
-@media screen and (max-height: 380px) and (max-width: 650px) {
-	.bannerText{
-		margin-right: 10%;
-		margin-left: 10%;
-	}
-}
-
-@media screen and (max-height: 330px) and (max-width: 650px){
-	.bannerText{
-		margin-right: 20%;
-		margin-left: 20%;
-	}
-}
-
-/*991+ width*/
-
-@media screen and (max-height: 450px) and (min-width: 991px){
-	.bannerText img{
-		width: 90%;
-	}
-}
-
-@media screen and (max-height: 400px) and (min-width: 991px){
-	.bannerText img{
-		width: 80%;
-	}
-}
-
-@media screen and (max-height: 380px) and (min-width: 991px){
-	.bannerText img{
-		width: 70%;
-	}
-}
-
-@media screen and (max-height: 360px) and (min-width: 991px){
-	.bannerText img{
-		width: 55%;
-	}
-}
-
-@media screen and (max-height: 340px) and (min-width: 991px){
-	.bannerText img{
-		width: 40%;
-	}
-}
-
-@media screen and (max-height: 320px) and (min-width: 991px){
-	.bannerText img{
-		width: 25%;
-		margin-right: 0;
-		margin-left: 0;
-	}
-}
-
-@media screen and (max-height: 300px) and (min-width: 991px){
-	.bannerText img{
-		width: 10%;
 	}
 }
