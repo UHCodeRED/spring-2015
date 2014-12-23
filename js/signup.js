@@ -15,6 +15,7 @@ function toggleSignUpHeader(){
 			$("#regContent").css("visibility", "hidden");
 			$("#regContent").css("width", '');
 			$("#registration").css("box-shadow",'');
+			$("#regButtonHeader").css("background", '');
 			$("#regButtonHeader").animate({
 		    	"width": suWidth
 			}, 500, function(){
@@ -26,6 +27,7 @@ function toggleSignUpHeader(){
 	}else{
 		suVisible = true;
 		suWidth = $("#regButtonHeader").css("width");
+		$("#regButtonHeader").css("background", "#C8102E");
 		var ptop = ($(window).height() - $("#CodeRED").height() - ($("#regContent")[0].scrollHeight) - 120)/2;
 		$(".bannerText").animate({
 	    	"top": (ptop > 0) ? ptop : 0
