@@ -56,7 +56,9 @@
                     </div>
                     <div class="form-group">
                       <label for="school">School name:</label>
-                      <input type="text" class="form-control" id="school" placeholder="Enter school name">
+                      <div id="prefetch">
+                        <input type="text" class="form-control typeahead" id="school" placeholder="Enter school name">
+                      </div>
                     </div>
                     <div class="buttons">
                       <button type="submit" class="btn submit">Submit</button>
@@ -314,6 +316,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="js/stickyAndMain.js"></script>
+    <script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.min.js"></script>
     <script src="js/signup.js"></script>
 </body>
 
