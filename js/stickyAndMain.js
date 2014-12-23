@@ -39,6 +39,9 @@ jQuery(function($) {
                 height: $(window).height() - 60
             });
 
+            //True vertical centering
+            $('.bannerText').css("top", ($(window).height() - $("#CodeRED").height() - 140)/2);
+
             //Resize registration form
             if (suVisible){
                 var ptop = ($(window).height() - $("#CodeRED").height() - ($("#regContent")[0].scrollHeight) - 120)/2;

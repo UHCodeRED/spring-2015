@@ -1,5 +1,4 @@
 var suVisible = false;
-var suTop = "";
 var suWidth = "";
 
 function toggleSignUpHeader(){
@@ -18,15 +17,12 @@ function toggleSignUpHeader(){
 		    	"width": suWidth
 			}, 500, function(){
 				$(".bannerText").animate({
-			    	"top": suTop
-				}, 500, function() {
-					$(".bannerText").css("top", '');
-				});
+			    	"top": ($(window).height() - $("#CodeRED").height() - 140)/2
+				}, 500);
 			});
 		});
 	}else{
 		suVisible = true;
-		suTop = $(".bannerText").css("top");
 		suWidth = $("#regButtonHeader").css("width");
 		var ptop = ($(window).height() - $("#CodeRED").height() - ($("#regContent")[0].scrollHeight) - 120)/2;
 		$(".bannerText").animate({
