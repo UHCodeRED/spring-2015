@@ -39,8 +39,12 @@
                 <div id="regContent">
                   <form role="form">
                     <div class="form-group">
-                      <label for="name">Full name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                      <label for="firstname">First name</label>
+                      <input type="text" class="form-control" id="firstname" placeholder="Enter first name">
+                    </div>
+                    <div class="form-group">
+                      <label for="lastname">Last name</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Enter last name">
                     </div>
                     <div class="form-group">
                       <label for="email">Email (.edu preffered):</label>
