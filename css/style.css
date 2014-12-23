@@ -315,19 +315,19 @@ header {
 
 .cancel{
 	background-color: #888B8D;
-	border-color: #54585A;
+	border-color: #000;
 	color: #fff;
 }
 
 .cancel:hover{
-	background-color: #54585A;
+	background-color: #000;
 	border-color: #000;
 	color: #fff;
 }
 
 .schedule {
 	background: #fff;
-	color: #474d5d;
+	color: #000;
 }
 
 .schedule .container {
@@ -359,7 +359,7 @@ header {
 
 .faq {
 	background: #eee;
-	color: #474d5d;
+	color: #000;
 }
 
 .faq .container {
@@ -374,7 +374,7 @@ header {
 
 .sponsors {
 	background: #FFFFFF;
-	color: #474d5d;
+	color: #000;
 }
 
 .sponsors .container {
