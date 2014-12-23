@@ -12,7 +12,9 @@ function toggleSignUpHeader(){
 		$("#regContent").animate({
 			    "height" : 0
 		}, 500, function() {
-			$("#regContent").css("visibility", "hidden")
+			$("#regContent").css("visibility", "hidden");
+			$("#regContent").css("width", '');
+			$("#registration").css("box-shadow",'');
 			$("#regButtonHeader").animate({
 		    	"width": suWidth
 			}, 500, function(){
@@ -31,11 +33,12 @@ function toggleSignUpHeader(){
 			$("#regButtonHeader").animate({
 		    	"width": $("#bannerContent").width()
 			}, 500, function() {
+				$("#registration").css("box-shadow","0 0 5px #000");
 				$("#regContent").css("width", $("#bannerContent").width()).css("visibility", "visible");
 				$("#regContent").animate({
 			    	"height": ($("#regContent")[0].scrollHeight)
 				}, 500, function(){
-					if ($("#home").height() < 680){
+					if ($(window).height() < 680){
 						$("#home").animate({
 							"height" : $("#CodeRED").height() + ($("#regContent")[0].scrollHeight) + 110
 						},100);
