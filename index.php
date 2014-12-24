@@ -47,7 +47,7 @@
                       <input type="text" class="form-control" id="lastname" placeholder="Enter last name">
                     </div>
                     <div class="form-group">
-                      <label for="email">Email (.edu preffered):</label>
+                      <label for="email">Email (.edu preferred):</label>
                       <input type="email" class="form-control" id="email" placeholder="Enter email">
                     </div>
                     <div class="form-group">
