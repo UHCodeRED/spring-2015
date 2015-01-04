@@ -28,7 +28,7 @@ function toggleSignUpHeader(){
 		suVisible = true;
 		suWidth = $("#regButtonHeader").css("width");
 		$("#regButtonHeader").css("background", "#C8102E");
-		var ptop = ($(window).height() - $("#CodeRED").height() - ($("#regContent")[0].scrollHeight) - 120)/2;
+		var ptop = ($(window).height() - $("#CodeRED").height() - ($("#regContent")[0].scrollHeight) - 140)/2;
 		$(".bannerText").animate({
 	    	"top": (ptop > 0) ? ptop : 0
 		}, 500, function(){

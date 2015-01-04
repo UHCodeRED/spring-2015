@@ -282,7 +282,7 @@ header {
 	background-color: white;
 	display: inline-block;
 	color: black;
-	padding: 20px;
+	/*padding: 20px;*/
 	text-align: left;
 	line-height: 20px;
 	visibility: hidden;
