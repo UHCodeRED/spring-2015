@@ -43,20 +43,20 @@ jQuery(function($) {
             $('.bannerText').css("top", ($(window).height() - $("#CodeRED").height() - 140)/2);
 
             //Resize registration form
-            if (suVisible){
-                var ptop = ($(window).height() - $("#CodeRED").height() - ($("#regContent")[0].scrollHeight) - 120)/2;
-                $('.bannerText').css("top", (ptop > 0) ? ptop : 0);
-                if ($(window).height() < 680){
-                    $("#home").animate({
-                        "height" : $("#CodeRED").height() + ($("#regContent")[0].scrollHeight) + 110
-                    },100);
-                    $(".banner").animate({
-                        "height" : $("#CodeRED").height() + ($("#regContent")[0].scrollHeight) + 110
-                    },100);
-                }else $("#home").css("height", '');
-                $('#regContent').css("width", $("#bannerContent").width()).css("height", ($("#regContent")[0].scrollHeight));
-                $('#regButtonHeader').css("width", $("#bannerContent").width());
-            }
+            // if (suVisible){
+            //     var ptop = ($(window).height() - $("#CodeRED").height() - ($("#regContent")[0].scrollHeight) - 120)/2;
+            //     $('.bannerText').css("top", (ptop > 0) ? ptop : 0);
+            //     if ($(window).height() <){
+            //         $("#home").animate({
+            //             "height" : $("#CodeRED").height() + ($("#regContent")[0].scrollHeight) + 110
+            //         },100);
+            //         $(".banner").animate({
+            //             "height" : $("#CodeRED").height() + ($("#regContent")[0].scrollHeight) + 110
+            //         },100);
+            //     }else $("#home").css("height", '');
+            //     $('#regContent').css("width", $("#bannerContent").width()).css("height", ($("#regContent")[0].scrollHeight));
+            //     $('#regButtonHeader').css("width", $("#bannerContent").width());
+            // }
         }
         
         $(window).resize(function() {
