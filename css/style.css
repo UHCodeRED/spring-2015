@@ -17,14 +17,19 @@ body {
 	padding: 0 !important;
 }
 
-a {
-	text-decoration: none;
-	color: #fff;
-	outline: none;
-}
-
 body.modal-open {
 	overflow: auto;
+}
+
+.center{
+	text-align: center;
+}
+
+.vhelper{
+	float:none;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:-4px;
 }
 
 .col-xs-12, .col-sm-4, .col-md-4, .col-lg-4 {
@@ -267,6 +272,10 @@ header {
 	color: white;
 }
 
+.about a {
+	color: #F6BE00;
+}
+
 .regButton {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -444,6 +453,10 @@ input[type="color"]:focus,
 
 .sponsors h4 {
 	font-weight: 700;
+}
+
+.sponsors img {
+	max-width: 600px;
 }
 
 .footer {
