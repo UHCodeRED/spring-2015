@@ -315,6 +315,10 @@ header {
   padding: 10% 15px !important;
 }
 
+.modal-header h3{
+	padding-bottom: 0;
+}
+
 .modal-body {
   height: 80%;
   border-radius: 0;
