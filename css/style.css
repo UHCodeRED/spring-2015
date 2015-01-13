@@ -11,15 +11,20 @@ body {
 	background: #000;
 	width: 100%;
 	height: 100%;
-	overflow: scroll;
+	overflow: auto;
 	overflow-x: hidden;
-	min-height: 320px
+	min-height: 320px;
+	padding: 0 !important;
 }
 
 a {
 	text-decoration: none;
 	color: #fff;
 	outline: none;
+}
+
+body.modal-open {
+	overflow: auto;
 }
 
 .col-xs-12, .col-sm-4, .col-md-4, .col-lg-4 {
@@ -307,7 +312,7 @@ header {
 .modal {
   width: 100%;
   height: 100%;
-  padding: 10% 15px;
+  padding: 10% 15px !important;
 }
 
 .modal-body {
