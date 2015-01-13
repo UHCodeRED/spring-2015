@@ -14,28 +14,6 @@
 
 <body>
     <div class="wrapper" id="wrapper">
-        <header id="home">
-            <div class="banner row" id="banner">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd">
-                    <div class="bannerPart">
-                        <img alt="" class="bannerImg" height="500%" src="images/back.jpg" style="visibility: hidden;">
-                    </div>
-                </div>
-            </div>
-            <div class="bannerText container" id="bannerContent">
-                <div id="CodeRED">
-                    <img width="100%" src="images/CodeRED-Light.png" />
-                    <br><br>
-                    <h2>Houston's Premier Hackathon<br>April 3rd, 2015 @ University of Houston</h2>
-                    <br><br>
-                </div>
-                <div id="registration">
-                    <a href="#regModal" data-toggle="modal">
-                        <h3 class="regButton" id="regButtonHeader" onclick="toggleSignUpHeader()">Sign me up!</h3>
-                    <a>
-                </div>
-            </div>
-        </header>
         <div class="menu">
             <div class="navbar-wrapper">
                 <div class="container">
@@ -48,25 +26,26 @@
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
-                                    <a class="navbar-brand"><img height="24" src="images/CodeRED-Light.png" />
+                                    <a class="navbar-brand">
+                                        <img height="24" src="images/CodeRED-Light.png"></img>
                                     </a>
                                 </div>
                                 <div class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav">
                                         <li class="menuItem active">
-                                            <a href="#wrapper">Home</a>
+                                            <a onclick="scrollToAnchor('#wrapper')">Home</a>
                                         </li>
                                         <li class="menuItem">
-                                            <a href="#about">About</a>
+                                            <a onclick="scrollToAnchor('#about')">About</a>
                                         </li>
                                         <li class="menuItem">
-                                            <a href="#schedule">Schedule</a>
+                                            <a onclick="scrollToAnchor('#schedule')">Schedule</a>
                                         </li>
                                         <li class="menuItem">
-                                            <a href="#faq">FAQ</a>
+                                            <a onclick="scrollToAnchor('#faq')">FAQ</a>
                                         </li>
                                         <li class="menuItem">
-                                            <a href="#sponsors">Sponsors</a>
+                                            <a onclick="scrollToAnchor('#sponsors')">Sponsors</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -76,6 +55,29 @@
                 </div>
             </div>
         </div>
+        <header id="home">
+            <div class="banner row" id="banner">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd">
+                    <div class="bannerPart">
+                        <img class="bannerImg" height="100%" width="100%" src="images/1px.png">
+                    </div>
+                </div>
+            </div>
+            <div class="bannerText container" id="bannerContent">
+                <div id="CodeRED">
+                    <img width="90%" src="images/CodeRED-Light.png" />
+                    <br><br>
+                    <h2>Houston's Premier Hackathon<br>April 3rd, 2015 @ University of Houston</h2>
+                    <br><br>
+                </div>
+                <div id="registration">
+                    <a href="#regModal" data-toggle="modal">
+                        <h3 class="regButton" id="regButtonHeader" onclick="toggleSignUpHeader()">Sign me up!</h3>
+                    </a>
+                </div>
+            </div>
+        </header>
+
         <section class="about" id="about">
             <div class="container">
                 <div class="heading">
@@ -242,8 +244,8 @@
                     <h2>Sponsors</h2>
                     <br><br><br><hr>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                <div class="row center row-fluid">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 vhelper">
                         <a href="http://coursality.com" target="_new">
                             <img width="100%" src="images/coursality.svg"></img>
                         </a>
@@ -267,12 +269,12 @@
                 <br>
                 <br> -->
                 <div class="row center row-fluid">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 vhelper">
                         <a href="http://cougarcs.com" target="_new">
                             <img width="100%" src="images/CSLogoBigforWhiteHorizontal.png"></img>
                         </a>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 vhelper">
                         <a href="https://www.facebook.com/UHDHackers" target="_new">
                             <img width="100%" src="images/UHDHackers.svg"></img>
                         </a>
@@ -310,7 +312,7 @@
             <h3>CodeRED Registration</h3>
         </div>
         <div class="modal-body">
-            <div class="typeform-widget" data-url="https://faysalsharif.typeform.com/to/YqBQmR" data-text="CodeRed" style="width:100%;height:100%;">
+            <div class="typeform-widget" data-url="https://faysalsharif.typeform.com/to/YqBQmR" data-text="CodeRed" style="width:100%;height:100%;color: red;">
             </div>
             <script>
                 (function() {
