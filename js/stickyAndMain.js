@@ -10,7 +10,7 @@ $(".navbar-toggle").click(function() {
 $(function() {
     function positionNav() {
         var position = $('#home').height() - $(window).scrollTop() - 60;
-        $(".menu").css('margin-top', (position >= 0) ? position : 0);
+        $(".menu").css('margin-top', (position >= 0) ? position : 0).show();
     }
     
     $(window).scroll(function() {
