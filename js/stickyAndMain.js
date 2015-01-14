@@ -13,13 +13,6 @@ $(".navbar-toggle").click(function() {
 });
 
 $(function() {
-    function resizeHeader() {
-        $('#banner').css({
-            width: $(window).width(),
-            height: $(window).height()
-        });
-    }
-
     function positionNav() {
         var position = $('#home').height() - $(window).scrollTop() - 60;
         if (position >= 0) {
@@ -34,11 +27,9 @@ $(function() {
     });
     
     $(window).resize(function() {
-        resizeHeader();
         positionNav();
     });
 
-    resizeHeader();
     positionNav();
 });
 

@@ -111,6 +111,10 @@ header {
 	height: 100%;
 }
 
+#home{
+	height: 100vh;
+}
+
 .banner {
 	overflow: hidden;
 	margin: 0 auto !important;
