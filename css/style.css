@@ -265,6 +265,10 @@ header {
 	color: #fff;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+
 .hideClass {
 	display: none;
 }
