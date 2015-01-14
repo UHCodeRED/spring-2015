@@ -32,6 +32,15 @@ body.modal-open {
     margin-right:-4px;
 }
 
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .col-xs-12, .col-sm-4, .col-md-4, .col-lg-4 {
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -155,10 +164,8 @@ header {
 	left: 0;
 	right: 0;
 	z-index: 1000;
-}
-
-.isStuck {
-	width: 100%;
+	background-color: #960C22;
+	border: 0;
 }
 
 .navwrapper .container {
@@ -172,8 +179,8 @@ header {
 }
 
 .navbar-brand{
-	padding-top: 18px;
-	padding-left: 5px;
+	padding: 20px;
+	height: 100%;
 }
 
 .nav > li > a {
@@ -204,14 +211,6 @@ header {
 	border: 0;
 }
 
-.navbar-inverse .navbar-toggle:hover {
-	background: transparent;
-}
-
-.navbar-inverse .navbar-toggle:active {
-	background: transparent;
-}
-
 .navbar-inverse .navbar-toggle {
 	background: transparent;
 }
@@ -229,6 +228,12 @@ header {
 
 .navbar-collapse {
 	padding: 0;
+	border: 0;
+}
+
+.navbar-collapse.in {
+    overflow-y: visible;
+    border: 0;
 }
 
 .navbar.navbar-inverse.navbar-static-top {

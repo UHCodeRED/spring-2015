@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+
+xmlns:og="http://ogp.me/ns#"
+
+xmlns:fb="http://www.facebook.com/2008/fbml"><!--formatted-->
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,52 +18,44 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
     <div class="wrapper" id="wrapper">
-        <div class="menu">
-            <div class="navbar-wrapper">
-                <div class="container">
-                    <div class="navwrapper">
-                        <div class="navbar navbar-inverse navbar-static-top">
-                            <div class="container">
-                                <div class="navbar-header">
-                                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                    <a class="navbar-brand">
-                                        <img height="24" src="images/CodeRED-Light.svg"></img>
-                                    </a>
-                                </div>
-                                <div class="navbar-collapse collapse">
-                                    <ul class="nav navbar-nav">
-                                        <li class="menuItem active">
-                                            <a onclick="scrollToAnchor('#home')">Home</a>
-                                        </li>
-                                        <li class="menuItem">
-                                            <a onclick="scrollToAnchor('#about')">About</a>
-                                        </li>
-                                        <li class="menuItem">
-                                            <a onclick="scrollToAnchor('#schedule')">Schedule</a>
-                                        </li>
-                                        <li class="menuItem">
-                                            <a onclick="scrollToAnchor('#faq')">FAQ</a>
-                                        </li>
-                                        <li class="menuItem">
-                                            <a onclick="scrollToAnchor('#sponsors')">Sponsors</a>
-                                        </li>
-                                        <li class="menuItem">
-                                            <a onclick="scrollToAnchor('#footer')">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="images/CodeRED-Light.svg" height="100%">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="menuItem active">
+                            <a href="#home" onclick="scrollToAnchor('#home')">Home</a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="#about" onclick="scrollToAnchor('#about')">About</a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="#schedule" onclick="scrollToAnchor('#schedule')">Schedule</a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="#faq" onclick="scrollToAnchor('#faq')">FAQ</a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="#sponsors" onclick="scrollToAnchor('#sponsors')">Sponsors</a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="#footer" onclick="scrollToAnchor('#footer')">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
         <header id="home">
             <div class="banner row" id="banner">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd">
@@ -67,14 +64,14 @@
                     </div>
                 </div>
             </div>
-            <div class="bannerText container" id="bannerContent">
+            <div class="bannerText container noselect" id="bannerContent">
                 <div id="CodeRED">
                     <img width="90%" src="images/CodeRED-Light.svg" />
                     <br><br><br>
                     <h2>Houston's Premier Hackathon<br>April 3rd, 2015 @ University of Houston</h2>
                     <br><br>
                 </div>
-                <div id="registration">
+                <div class="noselect" id="registration">
                     <a href="#regModal" data-toggle="modal">
                         <h3 class="regButton" id="regButtonHeader" onclick="toggleSignUpHeader()">Sign me up!</h3>
                     </a>
