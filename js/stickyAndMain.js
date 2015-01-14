@@ -18,9 +18,6 @@ $(function() {
             width: $(window).width(),
             height: $(window).height()
         });
-
-        //True vertical centering
-        $('.bannerText').css("top", ($(window).height() - $("#CodeRED").height() - 140)/2);
     }
 
     function positionNav() {

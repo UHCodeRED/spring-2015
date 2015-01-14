@@ -121,6 +121,8 @@ header {
 }
 
 .bannerText {
+	top: 50%;
+	transform: translateY(-50%);
 	position: absolute;
 	left: 0;
 	right: 0;
