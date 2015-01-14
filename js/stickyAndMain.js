@@ -25,5 +25,6 @@ $(function() {
 });
 
 function scrollToAnchor(aid){
+    event.preventDefault();
     $('html,body').animate({scrollTop: $(aid).offset().top - 60},'slow');
 }
