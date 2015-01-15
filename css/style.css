@@ -215,17 +215,6 @@ header {
 	background: transparent;
 }
 
-.navbar-wrapper {
-	margin-top: 0;
-	position: relative;
-	z-index: 15;
-	background: #960C22;
-}
-
-.navbar-wrapper .container {
-	padding: 0;
-}
-
 .navbar-collapse {
 	padding: 0;
 	border: 0;
@@ -267,10 +256,6 @@ header {
 
 .navbar-inverse .navbar-nav>li>a {
 	color: #fff;
-}
-
-.hideClass {
-	display: none;
 }
 
 .about {
@@ -317,19 +302,6 @@ header {
 	background: #960C22;
 }
 
-#regContent{
-	width: 0;
-	height: 0;
-	background-color: white;
-	display: inline-block;
-	color: black;
-	/*padding: 20px;*/
-	text-align: left;
-	line-height: 20px;
-	visibility: hidden;
-	overflow: auto;
-}
-
 #regModal{
 	height: 100%;
 }
@@ -348,62 +320,6 @@ header {
   height: 80%;
   border-radius: 0;
   padding: 0;
-}
-
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {   
-  border-color: rgba(159, 12, 34, 1);
-  box-shadow: none;
-  outline: 0 none;
-}
-
-.form-control{
-	border-radius: 0;
-}
-
-.buttons{
-	text-align: center;
-}
-
-.btn{
-	height: 45px;
-	padding: 0 20px;
-}
-
-.submit{
-	background-color: #C8102E;
-	color: #fff;
-	margin-right: 10px;
-	border-radius: 0;
-}
-
-.submit:hover{
-	background-color: #960C22;
-	color: #fff;
-}
-
-.cancel{
-	background-color: #fff;
-	color: #000;
-	border-radius: 0;
-}
-
-.cancel:hover{
-	color: #C8102E;
 }
 
 .schedule {
@@ -503,7 +419,7 @@ input[type="color"]:focus,
 }
 
 @media screen and (max-width: 768px) {
-	.navbar-wrapper .container,
+	.container,
 	.navwrapper .container {
 		padding-right: 8px;
 		padding-left: 15px;
