@@ -157,13 +157,13 @@ hr {
 	max-width: 960px;
 	color: white;
 	zoom: 1;
-	line-height: 10px;
 }
 
 .bannerText h2 {
 	font-size: 34px;
 	text-transform: none;
 	color: white;
+	padding: 20px;
 }
 
 .bannerPart {
