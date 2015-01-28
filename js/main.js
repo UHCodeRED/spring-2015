@@ -10,8 +10,8 @@ $(".navbar-toggle").click(function() {
 $(function() {
     function positionNav() {
         var position = $('#home').height() - $(window).scrollTop() - 60;
-        $(".menu").css('margin-top', (position >= 0) ? position : 0).show();
-        $('.bannerText').css("top", ($(window).height() - $("#CodeRED").height() - 140)/2);
+        $(".menu").css('margin-top', (position >= 0 && $(window).width() > 768) ? position : 0).show();
+        // $('.bannerText').css("top", ($(window).height() - $("#CodeRED").height() - 140)/2);
     }
     
     $(window).scroll(function() {

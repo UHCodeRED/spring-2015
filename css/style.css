@@ -149,14 +149,18 @@ hr {
 }
 
 .bannerText {
+	height: 370px;
 	position: absolute;
-	left: 0;
-	right: 0;
 	text-align: center;
 	padding: 30px 0 30px;
 	max-width: 960px;
 	color: white;
 	zoom: 1;
+	margin: auto;
+	top: -40px;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .bannerText h2 {
