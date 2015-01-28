@@ -188,10 +188,12 @@ hr {
 .navbar-header {
 	display: none;
 	height: 60px;
+	padding: 0 18px;
 }
 
 .navbar-brand{
-	padding: 18px;
+	height: 24px;
+	margin-top: 3px;
 }
 
 .nav > li > a {
