@@ -30,6 +30,7 @@ body.modal-open {
     display:inline-block;
     vertical-align:middle;
     margin-right:-4px;
+    margin-bottom: 10px;
 }
 
 .noselect {
@@ -66,10 +67,6 @@ body.modal-open {
 .container{
 	padding-top: 0;
 	padding-bottom: 85px;
-}
-
-.row-fluid {
-	padding-bottom: 45px;
 }
 
 p {
