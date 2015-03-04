@@ -286,7 +286,7 @@ hr {
 	color: white;
 }
 
-.about a {
+a {
 	color: #F6BE00;
 }
 
@@ -338,6 +338,10 @@ hr {
 .schedule {
 	background: #fff;
 	color: #000;
+}
+
+.sponsors a {
+	color: #C8102E;
 }
 
 .scheduleHead{
