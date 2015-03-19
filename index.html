@@ -82,9 +82,25 @@ xmlns:fb="http://www.facebook.com/2008/fbml"><!--formatted-->
                 </div>
                 <br>
                 <div class="noselect" id="registration">
-                    <a href="#regModal" data-toggle="modal">
-                        <h3 class="regButton" id="regButtonHeader" onclick="toggleSignUpHeader()">Sign me up!</h3>
-                    </a>
+                    <!-- Begin MailChimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+                    <div id="mc_embed_signup">
+                        <form action="//cougarcs.us10.list-manage.com/subscribe/post?u=4c9b374f672f97db6ec6e76ba&amp;id=f59740d0ad" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <h3 for="mce-EMAIL">
+                                Registrations have closed.<br>Subscribe for information on next year's hackathon</div><h3><br>
+                                <div class="form-group">
+                                    <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;">
+                                    <input type="text" name="b_4c9b374f672f97db6ec6e76ba_f59740d0ad" tabindex="-1" value=""></div>
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--End mc_embed_signup-->
                 </div>
             </div>
         </header>
@@ -401,7 +417,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml"><!--formatted-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
-    <div class="modal fade" id="regModal" height="100%">
+<!--     <div class="modal fade" id="regModal" height="100%">
         <div class="modal-header regHeader">
             <a class="close" data-dismiss="modal">&times;</a>
             <h3>CodeRED Registration</h3>
@@ -413,7 +429,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml"><!--formatted-->
                 (function(){var e,t,n,r,i=document,s=i.getElementById,o=i.createElement,u=i.getElementsByTagName,a="typef_orm",f="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";if(!s.call(i,a)){t=o.call(i,"script");t.id=a;t.src=f+"widget.js";n=u.call(i,"script")[0];n.parentNode.insertBefore(t,n)}})()
             </script>
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>
